@@ -1,0 +1,85 @@
+
+
+.roof{
+    margin-bottom: 5vw;
+}
+.contacts{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, calc(280px + 5vw));
+   
+    justify-content: space-evenly;
+    
+
+}
+.contact{
+    
+    height: calc(260px + 4vw);
+    background-color: black;
+    margin: calc(5px + .5vw);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition-duration: 0;
+    position: relative;
+    
+    
+}
+.facebook{
+    background-color: #3b5998;
+    
+}
+.instagram{
+    background-color: #fff;
+}
+.icon{
+    fill: #fff;
+    margin-top: 6%;
+    width: 40%;
+   
+}
+
+
+
+
+.hyber {
+    text-decoration: none;
+    color: #3b5998;
+    background-color: #fff;
+    width: 65%;
+    height: 19%;
+    font-size: calc(150% + .5vw);
+    border-radius: 10px;
+    margin-top: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    display: none;
+
+}
+.contact:hover .hyber{
+    color: #fff;
+    background-color: #3b5998;
+
+}
+.contact > div{
+    color:#fff;
+    text-decoration: none;
+    margin-top: 4%;
+    font-size: calc(140% + .8vw);
+}
+.contact:hover div{
+    color: #3b5998;
+}
+#button:hover{
+    color: #fff;
+    background-color: #FF6A3D;
+}
+.contact:hover .hyber{
+    display: inherit;
+}
+.path{
+    width: 100%;
+}
+/*Facebook icons*/

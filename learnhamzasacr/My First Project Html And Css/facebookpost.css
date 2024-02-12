@@ -1,0 +1,325 @@
+body{
+    min-width: 600px;
+}
+
+
+body{
+    margin: 0;
+
+}
+.facebook{
+    color: #1877F2;
+    font-size: 37px;
+    margin: 3%;
+    cursor: pointer;
+    transition-duration: 250ms;
+   
+    display: inline-block;
+}
+.facebook:hover{
+   color: #0a50ab;
+ 
+}
+hr{
+    width: 100%;
+    height: 7px;
+    background-color: #aaa;
+    border: 0;
+    margin: 0;
+    margin-top: 6px;
+
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    height: 8%;
+    position:fixed;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    justify-content: space-evenly;
+    
+}
+.icon{
+    width: calc(100% / 10);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 2.5px;
+    transition-duration: 125ms;
+}
+
+.iconp{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 2px;
+    transition-duration: 125ms;
+
+}
+.iconp p{
+    margin: 0;
+    text-align: center;
+    text-transform: capitalize;
+    transition-duration: 1s;
+}
+
+
+.icon1,
+.icon2,
+.icon3,
+.icon4,
+.icon5,
+.icon6{
+    width: 100%;
+    height: 50%;
+}
+
+.icon p{
+    margin: 0;
+    text-align: center;
+    text-transform: capitalize;
+    transition-duration: 350ms;
+}
+
+
+.parent{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.anime{
+    width: 10%;
+    height: 10%;
+    outline: 2px solid blue;
+    border-radius: 50%;
+    padding: 1px;
+    margin-left: 2%;
+    margin-top: 1%;
+    
+    
+}
+
+ 
+h3{
+    margin: 0;
+    margin-left: 1%;
+    margin-top: 1.75%;
+    font-size:100%;
+  
+    text-transform: uppercase;
+
+}
+span{
+    margin: 0;
+    display: inline-block;
+    box-sizing: border-box;
+    
+    font-size: 22px;
+    padding: 0 .5%;
+    
+    
+}
+.follow{
+    color: #1877F2;
+    font-size: 110%;
+    margin: 0;
+    margin-top: 1.7%;
+   
+    cursor: pointer;
+    
+    
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+   
+}
+.up{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+   
+    
+}
+.time{
+    font-size: 17px;
+    height: 20px;
+    color: #808080;
+    margin: 0;
+    margin-left: 1%;
+    margin-top: 1%;
+    
+}
+.poste{
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+
+}
+.deep{
+    
+    font-size: 20px;
+    margin: 0;
+    margin: 2% 0px 1% 1%;
+   
+    font-family: sans-serif;
+}
+.follow:hover,
+.follow:active{
+    color: #464646;
+}
+.like{
+    width: 25%;
+    margin-left: 0%;
+    margin-top: 1.5%;
+    cursor: pointer;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+.div1{
+    display: flex;
+    width: calc(75% / 4);
+    justify-content: center;
+    
+    
+}
+.div1 p{
+    margin: 0;
+    width: 30px;
+    padding-top: 8%;
+    padding-left: 5%;
+    font-size: 110%;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.div1:hover{
+    color: #0866FF;
+    fill: #0866FF;
+}
+*::selection{
+    color: white;
+    background-color: #1877F2;
+}
+.rea{
+    width: 20%;
+    margin: 0;
+}
+.reaction{
+    width: 100px;
+    display: flex;
+    margin-left: 3.5%;
+    cursor: pointer;
+}
+.reaction p{
+    margin: 0;
+    width: 60%;
+    font-size: 150%;
+    margin-left: 10%;
+    color: rgb(169, 167, 167);
+}
+.dot{
+    width: 5%;
+    height: 5%;
+    align-self: center;
+    margin-left: 12%;
+    transition-duration: 250ms;
+}
+.x{
+    width: 4%;
+    height: 4%;
+    align-self: center;
+    margin-left: 3%;
+    transition-duration: 200ms;
+    
+}
+
+a{
+    text-decoration: none;
+    color:unset;
+    
+}
+
+
+.icon p:hover,
+.iconp p:hover{
+    color: #0866FF;
+    font-size: 110%;
+
+}
+.iconp p:hover{
+    margin-right: 1px;
+}
+.icon:hover,
+.iconp:hover{
+    background-color: #eee;
+    color: #1877F2;
+    fill: #1877F2;
+    
+}
+.icon:hover{
+    width: 15%;
+}
+.iconp:hover{
+    width: 20%;
+}
+
+
+
+.clear{
+    height: 85px;
+}
+.icon1{
+    fill: #1877F2;
+}
+.x:active,
+.x:hover{
+    fill: #1877F2;
+    width: 4.5%;
+
+}
+.dot:hover{
+    fill: #1877F2;
+    width: 5.5%;
+}
+.div1 p:hover,
+.div1 p:active,
+.div1 a:hover{
+    color: #0866FF;
+}
+.reaction-parent{
+    display: flex;
+    justify-content: space-between;
+}
+.comments{
+    margin: 0;
+    margin-right: 5px;
+    letter-spacing: .75px;
+    font-size: 20px;
+
+}
+.comments a:hover,
+.comments a:active{
+    color: #0866FF;
+}
+.small{
+    height: .75px;
+    margin-bottom: 3px;
+}
+.icon,
+.iconp{
+    transition-duration: 200ms;
+}
+
+
+
+
+

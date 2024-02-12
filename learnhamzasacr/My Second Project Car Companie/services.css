@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.services{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+    margin-top: 5%;
+   
+
+}
+.service{
+    width: calc(400px + 4vw);
+    background-color: white;
+    height: calc(480px + 6vw);
+    margin: calc(10px + 1%);
+    border-radius: 20px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    transition-duration: .25s;
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    position: relative;
+
+}
+.title{
+    font-size: calc(220% + .5vw);
+    text-align: center;
+    width: 98%;
+    margin-top: 5%;
+    margin-bottom: 8%;
+    color: #FF6A3D;
+    height: 16%;
+    text-transform:capitalize;
+   
+   
+
+}
+.para{
+    font-size: 200%;
+    max-width: 28ch;
+    width: 90%;
+    height: 50%;
+    text-align: center;
+  
+    letter-spacing: 1.5px;
+    word-spacing: 4px;
+    color: #1A2238;
+    
+}
+.service:hover{
+    background-color: #1A2238;
+    color: #fff;
+}
+.service:hover .para{
+    color: #FF6A3D;
+}
+.service:hover .title{
+    color: white;
+}
+/*This is the code of the roof*/
+
+.p1 a,
+.p2 a,
+.p3 a,
+.p4 a{
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+
+.roof{
+    position: fixed;
+    top: 0;;
+    width: 100%;
+    /*height:  calc(50px + 1vw);*/
+    background-image: url(roof.png);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-size: contain;
+    height: 3.5vw ;
+    grid-template-areas: ". s . . p1  . p2 . p3 . p4 .";
+    align-items: center;
+    z-index: 2;
+    
+  
+}
+.dif{
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #FF6A3D;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+.roof div a:hover{
+    color: #FF6A3D;
+}
+.click{
+    text-decoration: none;
+    position: absolute;
+    margin-top: .6vw;
+
+    
+    font-size: 1.8vw;
+}
+.fit:hover{
+    width: 100%;
+    border-radius: 1.75vw;
+    background-color: #1A2238;
+    color: white;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    padding-left: 1vw;   
+}
+.fit{
+    grid-area: s;
+    background-color: white;
+    width: 3.5vw;
+    height: 3.5vw;
+    border-radius: 50%;
+    align-self: flex-start;
+    color: #FF6A3D;
+    cursor: pointer;
+    padding-left: .1vw;
+}
+.p1{
+    grid-area: p1;
+}
+.p2{
+    grid-area: p2;
+}
+.p3{
+    grid-area: p3;
+}
+.p4{
+    grid-area: p4;
+}
+
+
+body{
+   
+    background-color: #1A2238;
+    
+}
+a{
+    text-transform: capitalize;
+}
+/*end of the code of the roof*/
+button{
+    width: 70%;
+    height: 11%;
+    background-color: #1A2238;
+    border: 0;
+    border-radius: 10px;
+    margin-top: 3%;
+    color: #fff;
+    font-size: 240%;
+    
+}
+
+.service:hover  button{
+    color: #1A2238;
+    background-color: #fff;
+    
+}
+#btn:hover {
+    color: white;
+    background-color: #FF6A3D;
+    
+}
+button a{
+    color: inherit;
+    text-decoration: inherit;
+}
+hr{
+    width: 90%;
+    height: .3em;
+ 
+   
+    margin-bottom: 1%;
+    background-color: #1A2238;
+    display: none;
+}
+/*.service:hover > hr{
+    color: #fff;
+    background-color: #fff;
+}*/
+.feature{
+    color: inherit;
+    position: absolute;
+    bottom: 3%;
+}
+.feature:hover{
+    color:#FF6A3D;
+}
+.service *{
+    transition-duration: 0;
+}
+.empty{
+    height: 4vw;
+}
+@media (max-width: 1000px) {
+    .roof{
+        height: 7vw;
+        grid-template-columns: repeat(13, 1fr);
+        grid-template-areas: " . s s . p1 p1 p2 p2 p3 p3 p4 p4 .";
+    }
+    .dif{
+        font-size: 2.7vw;
+    }
+    .click{
+        margin-top: 1.3vw;
+        font-size: 3.6vw;
+    }
+    .fit:hover{
+        border-radius: 3.5vw;
+        padding-left: 2vw;
+    }
+    .fit{
+        width: 7vw;
+        height: 7vw;
+        padding-left: .2vw;
+    }
+    
+}
+
+
+

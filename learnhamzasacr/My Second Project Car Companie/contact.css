@@ -1,0 +1,411 @@
+
+
+.roof{
+    margin-bottom: 7vw;
+}
+/*The cards*/
+.contacts{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, calc(230px + 3.75vw));
+    justify-content: space-evenly;
+    
+
+}
+/*card*/
+.contact{
+    height: calc(240px + 4vw);
+    background-color: transparent;/*or you know use #fff white*/
+    margin: calc(5px + .5vw);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition-duration: 0;
+    justify-content: center;
+    transition-duration: 300ms;
+}
+.icon{
+    fill: #fff;
+    margin-top: 6%;
+    width: 40%;  
+}
+
+/*Global Contact*/
+svg{
+    width: 60%;
+    
+}
+.contact:hover  svg{
+   
+    margin-bottom: 5%;
+
+}
+/*global contact*/
+
+
+
+/*Facebook icons*/
+.facebook .path{
+   fill: #0165E1;
+}
+.facebook .path1{
+     fill: #fff;
+}
+/*hover first contact svg colors*/
+
+.facebook:hover .path1{
+    fill: #fff;
+}
+.facebook:hover .path{
+    fill: transparent;
+}
+/*hover first contact background-color*/
+.facebook:hover{
+    background-color: #0165E1;
+}
+/*Gerenal hover*/
+.contact:hover a
+{
+    display: inherit;
+}
+.contact:hover .account{
+    display: inherit;
+}
+/*accout button social media Gerenal*/
+.contact a{
+    text-decoration: none;
+    width: 70%;
+    height: 16%;
+    font-size: calc(100% + .4vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+     border-radius: 10px;
+    margin-top: 7%;
+    display: none;
+}
+.facebook a{
+    font-size: calc(135% + .4vw);
+}
+/*accout button facebook*/
+.facebook a{
+    background-color: 	#fff;
+    color: #0165E1;
+}
+.contact .account{
+    font-size: calc(125% + .4vw);
+    display: none;
+}
+.facebook .account{
+    color: #fff;
+    font-size: calc(140% + .5vw);
+    background-color: transparent;
+}
+
+div.instagram .account{
+    color: #C21975;
+}
+.instagram a{
+    font-size: calc(100% + .4vw);
+    background-image: linear-gradient(to right, #405DE6, #5B51D8, #833AB4, #C13584,#E1306C,#F56040,#FCAF45);
+    color: #fff;
+}
+.contact a:hover{
+    opacity: .95;
+}
+.instagram:hover{
+    background-color: #fff;
+}
+.instagram svg{
+    width: 55%;
+}
+.instagram:hover svg{
+    width: 50%;
+}
+/*linkedin x*/
+.linkedin .path{
+    fill:  #0A66C2;
+}
+.linkedin .path1{
+    fill:  #fff;
+}
+.linkedin .path2{
+    fill:   #fff;
+}
+.linkedin .path3{
+    fill:  #fff;
+}
+.linkedin:hover .path{
+    fill:  transparent;
+}
+.linkedin:hover .path1{
+    fill: #fff;
+}
+.linkedin:hover .path2{
+    fill: #fff;
+}
+.linkedin:hover .path3{
+    fill: #fff;
+}
+
+.linkedin:hover{
+    background-color:  #0A66C2;
+}
+.linkedin .linkedin{
+    color: #fff;
+}
+.linkedin a{
+    background-color: #fff;
+    color: #0A66C2;
+    font-size: calc(100% + .4vw);
+}
+/*===========================================*/
+/*reddit*/
+.reddit svg{
+    fill: #FF4500;
+    
+}
+.reddit .mouth{
+    fill: #FF4500;
+}
+.reddit .cercle{
+    fill: #FF4500;
+}
+.reddit .head{
+    fill: #fff;
+}
+.reddit .left-eye{
+    fill: #FF4500;
+}
+.reddit:hover{
+    background-color: #FF4500;
+}
+.reddit:hover *{
+    fill: #fff;
+}
+.reddit:hover .cercle{
+    fill: transparent;
+}
+.reddit .account{
+    color: #fff;
+}
+.reddit a{
+    font-size: calc(100% + .4vw);
+    background-color: #fff;
+    color: #FF4500;
+}
+/*=============================================*/
+/**Youtube*/
+.youtube .cercle{
+    fill: #f00;
+}
+.youtube .head{
+    fill: #fff;
+}
+.youtube:hover{
+    background-color: #f00;
+}
+.youtube:hover .cercle{
+    fill: transparent;
+}
+.youtube .account{
+    color: #fff;
+}
+.youtube a{
+    font-size: calc(100% + .4vw);
+    background-color: #fff;
+    color: #f00;
+}
+/*==============================================*/
+/*Pinterest*/
+.pinterest .logo{
+    fill: #fff;
+}
+.pinterest .background{
+    fill: #E60023;
+}
+.pinterest:hover .background{
+    fill: transparent;
+}
+.pinterest:hover{
+    background-color: #E60023;
+}
+.pinterest a{
+    font-size: calc(100% + .4vw);
+    color: #E60023;
+    background-color: #fff;
+}
+.pinterest .account{
+    color: #fff; 
+   
+}
+/*==========================================*/
+.telegram svg{
+    border: 10px solid  #2AABEE;
+    border-radius: 50%;
+}
+.telegram .logo{
+    fill: #fff;
+}
+.telegram .down{
+    fill:  #2AABEE;
+}
+.telegram:hover{
+    background-color:  #2AABEE;
+}
+.telegram:hover svg{
+    border-color: transparent;
+}
+.telegram .account{
+    font-size: calc(125% + .4vw);
+    color: #fff;
+}
+.telegram a{
+    font-size: calc(100% + .4vw);
+    color: #2AABEE;
+    background-color: #fff;
+}
+/*=============================================*/
+/*Discord*/
+.discord .logo{
+    fill: #fff;
+}
+.discord .circle{
+    fill: #5865f2;
+}
+.discord:hover{
+    background-color: #5865f2;
+}
+.discord:hover .circle{
+    fill: transparent;
+}
+.discord a{
+    color: #5865f2;
+    background-color: #fff;
+}
+.discord .account{
+    color: #fff;
+}
+/*===========================================*/
+/*Snapchat*/
+.snapchat .logo{
+    fill: #fff;
+}
+.snapchat .container{
+    fill: #FFFC00;
+}
+.snapchat:hover{
+    background-color: #FFFC00;
+}
+.snapchat .account{
+    color: #000;
+}
+.snapchat a{
+    color: #FFFC00;
+    background-color: #000;
+}
+.snapchat:hover .container{
+    fill: transparent;
+}
+/*=============================================*/
+/*Skype*/
+.skype:hover{
+    background-color: #009EDC;
+}
+.skype:hover .circle{
+    fill: transparent;
+}
+/*skype:hover .logo{
+    fill: #009EDC;
+}*/
+.skype a{
+    color: #009EDC;
+    background-color: #fff;
+}
+.skype .account{
+    color: #fff;
+}
+/*==============================================*/
+/*Zooom*/
+.zoom svg{
+    background-color: #2D8CFF;
+    border-radius: 15px;
+    fill: #fff;
+}
+.zoom:hover{
+    background-color: #2D8CFF;
+}
+.zoom:hover svg{
+    background-color: transparent;
+}
+.zoom .account{
+    color: #fff
+}
+.zoom a{
+    background-color: #fff;
+    color: #2D8CFF;
+}
+/*===================================================*/
+/*WhatAapp*/
+.whatsapp .logo{
+    fill: #fff;
+}
+.whatsapp .body{
+    fill: #000;
+}
+.whatsapp .circle{
+    fill: #fff;
+}
+.whatsapp .logo{
+    fill: #fff;
+}
+.whatsapp .body{
+    fill: #28D146;
+}
+.whatsapp:hover{
+    background-color: #28D146;
+}
+.whatsapp .account{
+    color: #fff;
+}
+.whatsapp a{
+    background-color: #fff;
+    color: #075E54;
+}
+/*=================================================================*/
+/*Email*/
+.email svg{
+    fill: #fff;
+}
+.email:hover{
+    background-color: #eee;
+}
+.email:hover svg{
+    fill: #1A2238;
+}
+.email:hover a{
+    color: #fff;
+    background-color: #1A2238;
+}
+.email:hover div{
+    color: #1A2238;
+}
+/*=======================================================*/
+/*Twetter*/
+.twetter path{
+    fill: #fff;
+
+}
+.twetter:hover{
+    background-color: #000;
+}
+.twetter .account{
+    color: #fff;
+} 
+.twetter a{
+    color: #000;
+    background-color: #fff;
+    font-size: calc(135% + .4vw);
+}
+

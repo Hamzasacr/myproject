@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+a{
+    text-transform: capitalize;
+}
+nav{
+    background-color: 
+    #fff;
+    display: flex;
+    flex-direction: column;
+   
+    width: calc(360px + 6vw);
+    border-radius: 20px;
+    height: calc(400px + 6vw);
+    transition-duration: .5s;
+    margin: calc(10px + 1%);
+    color: #FF6A3D;
+    align-items: center;
+    color:#1A2238;
+    box-sizing: border-box;
+    
+}
+.p1 a,
+.p2 a,
+.p3 a,
+.p4 a{
+    margin: 0 auto;
+}
+
+img{
+    width: 90%;
+    margin: 1vw auto;
+    border-radius: 5px 5px 0 0;
+   
+}
+
+.parent{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: space-evenly;
+    
+    border-radius: 30px;
+    margin-top: 1%;
+    
+    
+}
+body{
+   
+    background-color: #1A2238;
+    
+}
+nav:hover{
+    background-color: #1A2238;
+    border: 2px solid #fff;
+    -webkit-text-stroke-color: #fff;
+    color: white;
+}
+
+.roof{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    /*height:  calc(50px + 1vw);*/
+    background-image: url(roof.png);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* background-size: 250px cover; */
+    height: 3.5vw;
+    grid-template-areas: ". s . . p1  . p2 . p3 . p4 .";
+    align-items: center;
+    z-index: 100;
+    margin-bottom: 4vw;
+    background-size: contain;
+}
+.dif{
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #FF6A3D;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+a:hover{
+    color: #FF6A3D;
+}
+.bottom{
+    background-image: url(roof.png);
+    width: 100%;
+    height: calc(30px + 1vw);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+/*
+nav:active{
+    display: flex;
+    flex-direction: row;
+    
+    width: 90%;
+    border-radius: 20px;
+    height: calc(500px + 6vw);
+    transition-duration: .5s;
+    margin: calc(10px + 1%);
+    color: #FF6A3D;
+    
+    
+}*/
+/*.fit{
+    background-color: #FF6A3D;
+    border-radius: 50%;
+    width: 3vw;
+    height: 3vw;
+
+}*/
+.click{
+    text-decoration: none;
+    position: absolute;
+    margin-top: .6vw;
+
+    
+    font-size: 1.8vw;
+}
+.fit:hover{
+    width: 100%;
+    border-radius: 1.75vw;
+    background-color: #1A2238;
+    color: white;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    padding-left: 1vw;   
+}
+.fit{
+    grid-area: s;
+    background-color: white;
+    width: 3.5vw;
+    height: 3.5vw;
+    border-radius: 50%;
+    align-self: flex-start;
+    color: #FF6A3D;
+    cursor: pointer;
+    padding-left: .1vw;
+}
+.p1{
+    grid-area: p1;
+}
+.p2{
+    grid-area: p2;
+}
+.p3{
+    grid-area: p3;
+}
+.p4{
+    grid-area: p4;
+}
+button{
+    width: 55%;
+    height: 10%;
+    color: white;
+    background-color: #1A2238;
+    text-decoration: none;
+    font-size: 200%;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition-duration: 600ms;
+    /* use this if your want*/ 
+    
+  
+
+
+
+}
+
+
+nav:hover button:hover{
+    color: #fff;
+    background: #FF6A3D;
+}
+button:active{
+    color: #1A2238;
+}
+nav p{
+    width: 80%;
+    font-size:180%;
+    height: 10%;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+   
+}
+nav:hover button{
+    color: #1A2238;
+    background-color: #fff;
+}
+.price{
+    font-size: 180%;
+    color: #FF6A3D;
+    margin-top: 9%;
+    margin-bottom: 1%;
+
+    
+}
+.policy{
+    margin-top: 4%;
+   
+    font-size: 110%;
+    text-decoration: underline;
+
+}
+.policy:hover{
+    color: #FF6A3D;
+    cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+    .roof{
+        height: 7vw;
+        grid-template-columns: repeat(13, 1fr);
+        grid-template-areas: " . s s  . p1 p1 p2 p2 p3 p3 p4 p4 .";
+    }
+    .dif{
+        font-size: 2.7vw;
+    }
+    .click{
+        margin-top: 1.3vw;
+        font-size: 3.6vw;
+    }
+    .fit:hover{
+        width: 100%;
+        border-radius: 3.5vw;
+        padding-left: 2vw;
+    }
+    .fit{
+        width: 7vw;
+        height: 7vw;
+        padding-left: .2vw;
+    }
+    
+}
+@media (max-width: 950px){
+    nav{
+        width: calc(460px + 8vw);
+        height: calc(500px + 8vw);
+    }
+    .policy{
+        margin-top: 50px;
+    }
+
+}
+@media (max-width: 1000px){
+    .fit:hover{
+        padding-left: 5px;
+    }
+    
+}

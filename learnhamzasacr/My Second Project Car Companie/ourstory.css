@@ -1,0 +1,131 @@
+
+
+.roof{
+    margin-bottom: 5%;
+   
+}
+.information-about-us{
+    color: #fff;
+    font-size: calc(150% + 3vw);
+    display: inline-block;
+    margin: 0 50%;
+    transform: translate(-50%);
+    width: 8ch;
+    margin-bottom: 5%;
+    display: none;
+}
+
+  
+
+.card1{
+    display: flex;
+    /* grid-template-columns: repeat(29, 1fr);
+    grid-template-areas: ". one  one one one one one one one one one one one one . two two two two two two two two two two two two two ." */
+    flex-direction: column;
+    
+    align-items: center;
+}
+.mission{
+    /*width: calc(650px +  7vw);*/
+    
+    grid-area: one;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    height: 15vw;
+    width: 70%;
+    margin-bottom: 5%;
+    min-height: 200px;
+    /* background-image: url(sky.jpg); */
+    
+
+}
+ .cards .essence{
+    /*width: calc(650px + 7vw);*/
+    background-color: rgba(17, 34, 56, 85%);
+   
+    height: 600px;
+    grid-area: two;
+    margin-top: 50px;
+    border-radius: 25px;
+    width: 40%;
+    animation-name: hue;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    
+}
+
+/*Mission*/
+.mission > h3 {
+    text-align: center;
+    width: 100%;
+    font-size: calc(100% + 1.75vw);
+    color: #FF6A3D;
+    text-transform: capitalize;
+    margin-top: 0%;
+    
+
+
+}
+.mission > p{
+   /*  width: 58%; */
+    text-align: center;
+    font-size: 1.5vw;
+    color: #fff;
+    /* text-shadow: .5px 0px #000; */
+    
+}
+.mission img{
+    width: 15vw;
+    object-fit: fill;
+    border-radius: 50%;
+    height: 10vw;
+    margin: 0;
+    margin-left: 5%;
+    top: 0;
+    align-self: flex-start;
+    display: none;
+
+    /* background-position: center center; */
+    
+
+    
+
+
+}
+.partie{/* Shift + alt + a */
+    margin-top: 150px;
+}
+@keyframes huee{
+    to{background-color: rgba(17, 34, 56, 95%);}
+}
+a.contact{
+    text-decoration: underline;
+    text-decoration-color: #FF6A3D;
+    cursor: pointer;
+    color: #fff;
+}
+.contact:hover{
+    color: #FF6A3D;
+}
+@media (max-width: 1100px){
+    .mission > h3{
+        font-size: calc(70% + 4vw);
+        height: calc(50px + 3vw);
+    }
+    .mission p{
+        font-size: calc(50% + 3vw);
+        width: 90%;
+    }
+    .mission{
+        height: max-content;
+        margin-bottom: calc(50px + 1.5vw);
+    }
+    .mission{
+        width: 100%;
+    }
+
+}

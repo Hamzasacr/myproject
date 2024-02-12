@@ -1,0 +1,543 @@
+*{
+    margin: 0;
+}
+
+:root{
+    --color: #499ff5;
+}
+div:not([class*=ball]){
+    background-color: #669ff5 !important;
+}
+.l{
+    margin-top: 5vw;
+    width: 3vw;
+    height: 15vw;
+    background-color:  var(--color);
+    margin-left: 3vw;
+    display: inline-block;
+
+}
+.l1, 
+.l1m{
+    animation-name: H;
+    animation-duration: 1.25s;
+    animation-timing-function: linear;
+    transform: scaleY(0);
+    transform-origin: top center;
+    animation-fill-mode: forwards;
+}
+.l2{
+    margin-left: 6vw;
+    animation-name: H;
+    animation-duration: 1.25s;
+    animation-timing-function: linear;
+    transform: scaleY(0);
+    transform-origin: top center;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes H{
+    to{
+        transform: scaleY(1);
+    }
+}
+.middle{
+    background-color: #499ff5;
+    width: 10vw;
+    height: 3vw;
+    animation-name: M;
+    animation-duration: 1.25s;
+    animation-timing-function: linear;
+    transform: translate(4vw, calc(-9vw - 5px)) scaleX(0);
+    transform-origin: 0% 50%;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes M{
+    to{
+        transform: translate(4vw, calc(-9vw - 5px)) scale(1);
+    }
+}
+.ball{
+    width: 2vw;
+    height: 2vw;
+    background-color: #000;
+    position: absolute;
+    left: 3.5vw;
+    top: calc(5vw + 5px);
+    border-radius: 50%;
+    
+
+}
+.ballH{
+    animation-name: ball;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes ball{
+     12.5%{
+        top: calc(18vw - 5px);
+        left: calc(3vw + .5vw);
+    } 
+    25%{
+        
+        left: calc(3vw + .5vw);
+        top: calc(11.5vw);
+       
+    }
+    37.5%{
+        top: calc(11.5vw);
+        left:  calc(12.5vw + 4px);
+    }
+    50%{
+        left:  calc(12.5vw + 4px);
+
+        top: calc(5vw + 5px);
+    
+    }
+    62.5%{
+        left:  calc(12.5vw + 4px);
+
+        top: calc(18vw - 5px);
+    }
+    75%{
+        left:  calc(12.5vw + 4px);
+        top: calc(11.5vw);
+
+    }
+    87.5%{
+        top: calc(11.5vw);
+        left: calc(3vw + .5vw);
+    }
+    100%{
+        left: 3.5vw;
+        top: calc(5vw + 5px);
+    }
+    
+}
+.first-row{
+    width: 3vw;
+    height: 16vw;
+
+    transform: translate(22.9vw, calc(-18.65vw + 9.3px) ) rotate(20deg) skewY(-20deg) scaleY(0);
+    animation-name: F;
+    animation-duration: 1.25s;
+    animation-timing-function: linear;
+   transform-origin: 100% top;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes F{
+    to{
+        
+        transform: translate(22.9vw, calc(-18.65vw + 9.3px) ) rotate(20deg) skewY(-20deg) scaleY(1);
+        
+    }
+} 
+
+.row1{
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #0009;
+}
+.r1{
+    top: 20vw;
+    display: none;
+    
+}
+.r2{
+    top: calc(5vw - 5px);
+    display: none;
+    
+}
+.second-row{
+    width: 3vw;
+    height: 16vw;
+    transform: translate(27vw, calc(-35vw + 6.5px) ) rotate(-20deg) skewY(20deg);
+    
+}
+.middleA{
+    position: absolute;
+    width: 8vw;
+    height: 3vw;
+    top: 11vw;
+    left: 21vw;
+    animation-name: H;
+    animation-duration: 1.25s;
+    animation-timing-function: linear;
+    transform-origin: 0% 50%;
+    animation-fill-mode: forwards;
+    animation-delay: 2.5s;
+    transform: scaleX(0);
+}
+
+
+
+.mfirst{
+    position: absolute;
+    width: 3vw;
+    height: 16vw;
+    top: 5vw;
+    left: 23vw;
+    transform: rotate(20deg) skewY(-20deg) scaleY(0);
+   animation-name: mfirst;
+    animation-duration: 1.25s;
+    animation-timing-function: linear;
+    transform-origin: 50% top;
+    animation-fill-mode: forwards;
+    
+   
+}
+
+
+@keyframes mfirst{
+    to{
+        transform: rotate(20deg) skewY(-20deg) scaleY(1);
+    }
+}
+.msecond{
+    position: absolute;
+    width: 3vw;
+    height: 16vw;
+    top: 5vw;
+    left: 25.5vw;
+    transform: rotate(-20deg) skewY(20deg) scaleY(0);
+    animation-name: msecond;
+    animation-duration: 1.25s;
+    animation-delay: 5s;
+    animation-timing-function: linear;
+    transform-origin: 50% top;
+    animation-fill-mode: forwards;
+}
+@keyframes msecond{
+    to{
+        transform: rotate(-20deg) skewY(20deg) scaleY(1);
+    }
+}
+.mmiddle{
+    position: absolute;
+    width: 6vw;
+    height: 3vw;
+    top: 11vw;
+    left: 22.7vw;
+    animation-name: H;
+    transform: scaleX(0);
+    animation-duration: 1.25s;
+    animation-delay: 2.5s;
+    animation-timing-function: linear;
+    transform-origin: 0% center;
+    animation-fill-mode: forwards;
+    
+
+}
+.r3{
+    top:11vw;
+    z-index: 9;
+    display: none;
+    background-color: #0003;
+    
+}
+.ballB{
+    left: 23vw;
+    z-index: 9;
+    width: 2vw; 
+    height: 2vw;
+    border-radius: 1vw;
+    
+    animation-duration: 10s;
+    animation-name: A;
+    animation-timing-function: linear;
+    
+    
+    animation-iteration-count: infinite;
+    
+   
+   
+}
+ @keyframes A{
+    12.5%{
+        transform:   translate( -4.5vw, 12.5vw);
+    }
+    25%{
+        transform:   translate(-2.25vw,6.25vw);
+        
+        
+    } 
+    37.5%{
+       transform:  translate(5.75vw, 6.15vw);
+    }
+
+    50%{
+         transform: rotate(-20deg) translate(3.25vw, 1.25vw); 
+    }
+     62.5%{
+        transform: rotate(-20deg) translate(3.3vw , 14.5vw);
+    } 
+    75%{
+       transform: rotate(-20deg)  translate(3.3vw, 7.75vw);
+    }
+    
+    87.5%{
+        transform:   translate(-2.35vw, 6.15vw);
+
+
+
+    } 
+    
+    100%{
+        transform: rotate(20deg)  ; 
+    }
+
+ 
+}
+/* start end */
+.l1m{
+    position: absolute;
+    top: 0;
+    left: 33.5vw;
+    animation-name: H;
+    animation-duration: 1.3s;
+    animation-timing-function: linear;
+    transform: scaleY(0);
+    transform-origin: bottom center;
+    animation-fill-mode: forwards;
+}
+
+.l2m{
+    position: absolute;
+    top: 0;
+    left: 45vw;
+    animation-name: H;
+    animation-duration: 1.25s;
+    animation-timing-function: linear;
+    transform: scaleY(0);
+    transform-origin: top center;
+    animation-fill-mode: forwards;
+    animation-delay: 4.875s;
+}
+
+.first-m{
+    position: absolute;
+    top: calc(5vw);
+    left: 37vw;
+    width: 3vw;
+    height: 10vw;
+    animation-delay: 1.625s;
+    transform: rotate(-30deg) skewY(30deg) scaleY(0);
+    animation-name: first;
+    animation-duration: 1.3s;
+    animation-timing-function: linear;
+    transform-origin: top center;
+    animation-fill-mode: forwards;
+}
+@keyframes first{
+    to{
+        transform: rotate(-30deg) skewY(30deg) scaleY(1);
+    }
+}
+
+.second-m{
+    position: absolute;
+    top: 3.65vw;
+    left: 42.5vw;
+    width: 3vw;
+    height: 10vw;
+    
+    animation-delay: 3.25s;
+    transform: rotate(30deg) skewY(-30deg) scaleY(0);
+    
+    animation-name: second;
+    animation-duration: 1.3s;
+    animation-timing-function: linear;
+    transform-origin: bottom center;
+    animation-fill-mode: forwards;
+}
+@keyframes second{
+    to{
+        transform: rotate(30deg) skewY(-30deg) scaleY(1);
+    }
+}
+.ballm{
+    border-radius: 50%;
+    left: 37vw;
+    transform: translateY(12vw);
+    animation-name: ballM;
+    animation-duration: 13s;
+    animation-timing-function: linear;
+    transform-origin: top center;
+    animation-iteration-count: infinite;
+    
+    
+   
+    /* transform: rotate(30deg) translate(11vw, -5vw);
+    transform:  translate(11.5vw, 12vw); */
+}
+@keyframes ballM{
+    10%{
+       transform: rotate(0) translate(0vw ,0vw);/*1  */
+    }  
+    12.5%{
+        transform: rotate(0) translate(1.5vw ,0vw);/*2  */
+    } 
+    
+    22.5%{
+         transform: rotate(0) translate(4.75vw, 6vw) ;/*3  */
+     }  
+      
+     25%{
+        transform: translate(7vw, 6vw); /* 4 */
+     } 
+     
+     35%{
+        transform:  translate(10.25vw, 0vw);/*5  */
+     } 
+      37.5%{
+        transform:  translate(11.5vw, 0vw);/*  6*/
+     }
+      47.5%{
+       transform:  translate(11.5vw, 12vw);/*  7*/
+     }
+     57.5%{
+        transform:  translate(11.5vw, 0vw);/*  8*/
+     }
+     60%{
+        transform:  translate(10.25vw, 0vw);/*  9*/
+     }
+     70%{
+        transform:  translate(7vw, 6vw); /*  10*/
+     }
+     72.5%{
+        transform:  translate(4.75vw, 6vw) ;/*  11*/
+
+     }
+     82.5%{
+        transform: translate(1.5vw ,0vw);/* 12 */
+     }
+     85%{
+        transform:  translate(0vw ,0vw);/* 13 */
+     }
+     100%{
+        transform: translateY(12vw);/* 14 */
+     }
+} 
+*{
+    
+    animation-fill-mode: forwards;
+}
+.z-first{
+    width: 15vw;
+    height: 3vw;
+    position: absolute;
+    top: 5vw;
+    left: 54.03vw;
+    animation-name: first-second;
+    animation-duration: 2.1666s;
+    transform-origin: 0% 50%;
+    transform: scaleX(0);
+    animation-timing-function: linear;
+
+}
+@keyframes first-second{
+    to{
+        transform: scaleX(1);
+    }
+}
+.z-middle{
+    height: 13.75vw;
+    width: 3vw;
+    position: absolute;
+    top: 7.99vw;
+    left: 65.185vw;
+    transform: rotate(49deg) skewY(-49deg) scaleY(0);
+    transform-origin: center top;
+    animation-duration: 2.16666s;
+    animation-name: z-middle;
+    animation-timing-function: linear;
+    animation-delay: 2.16666s;
+   
+    
+    
+}
+@keyframes z-middle{
+    to{
+        transform: rotate(49deg) skewY(-49deg) scaleY(1);
+    }
+}
+.ballz{
+    left: 55vw;
+    top: 5.5vw;
+    border-radius: 50%;
+    
+    animation-name: ballz;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes ballz{
+    16.666%{
+        left: 66.5vw;
+        top: 5.5vw;
+    }
+    33.333%{
+        left: 54.5vw;
+        top: 17.5vw;
+    }
+    49.999%{
+        top: 17.5vw;
+        left: 66.5vw;
+    }
+    66.6666%{
+        left: 54.5vw;
+        top: 17.5vw;
+    }
+    83.3333%{
+        left: 66.5vw;
+        top: 5.5vw;
+    }
+    100%{
+        left: 55vw;
+        top: 5.5vw;
+    }
+}
+.z-thirth{
+    top: 17vw;
+    animation-name: first-second;
+    animation-delay: 4.3333s;
+    animation-duration: 2.1666s;
+    transform-origin: 0% 50%;
+    transform: scaleX(0);
+    animation-timing-function: linear;
+}
+.afirst{
+    left: 77.5vw;
+}
+.amiddle{
+    left: 77.2vw;
+}
+.asecond{
+    left: 80vw;
+}
+.ballA{
+    position: absolute;
+    top: 5.25vw;
+    left: 77.5vw;
+    background-color: #000;
+}
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+   

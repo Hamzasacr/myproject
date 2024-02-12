@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rent Cars</title>
+        <link rel="stylesheet" href="car.css">
+        <style>
+            *{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+a{
+    text-transform: capitalize;
+}
+nav{
+    background-color: 
+    #fff;
+    display: flex;
+    flex-direction: column;
+   
+    width: calc(360px + 6vw);
+    border-radius: 20px;
+    height: calc(400px + 6vw);
+    transition-duration: .5s;
+    margin: calc(10px + 1%);
+    color: #FF6A3D;
+    align-items: center;
+    color:#1A2238;
+    box-sizing: border-box;
+    
+}
+.p1 a,
+.p2 a,
+.p3 a,
+.p4 a{
+    margin: 0 auto;
+}
+
+img{
+    width: 90%;
+    margin: 1vw auto;
+    border-radius: 5px 5px 0 0;
+   
+}
+
+.parent{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: space-evenly;
+    
+    border-radius: 30px;
+    margin-top: 1%;
+    
+    
+}
+body{
+   
+    background-color: #1A2238;
+    
+}
+nav:hover{
+    background-color: #1A2238;
+    border: 2px solid #fff;
+    -webkit-text-stroke-color: #fff;
+    color: white;
+}
+
+.roof{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    /*height:  calc(50px + 1vw);*/
+    background-image: url(roof.png);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+   
+    height: 3.5vw ;
+    grid-template-areas: ". s . . p1  . p2 . p3 . p4 .";
+    align-items: center;
+}
+.dif{
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #FF6A3D;
+    font-size: calc(15px + .5vw);
+    cursor: pointer;
+}
+a:hover{
+    color: #FF6A3D;
+}
+.bottom{
+    background-image: url(roof.png);
+    width: 100%;
+    height: calc(30px + 1vw);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+/*
+nav:active{
+    display: flex;
+    flex-direction: row;
+    
+    width: 90%;
+    border-radius: 20px;
+    height: calc(500px + 6vw);
+    transition-duration: .5s;
+    margin: calc(10px + 1%);
+    color: #FF6A3D;
+    
+    
+}*/
+/*.fit{
+    background-color: #FF6A3D;
+    border-radius: 50%;
+    width: 3vw;
+    height: 3vw;
+
+}*/
+.click{
+    text-decoration: none;
+    position: absolute;
+    margin-top: .6vw;
+
+    
+    font-size: 1.8vw;
+}
+.fit:hover{
+    width: 100%;
+    border-radius: 1.75vw;
+    background-color: #1A2238;
+    color: white;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    padding-left: 1vw;   
+}
+.fit{
+    grid-area: s;
+    background-color: white;
+    width: 3.5vw;
+    height: 3.5vw;
+    border-radius: 50%;
+    align-self: flex-start;
+    color: #FF6A3D;
+    cursor: pointer;
+    padding-left: .1vw;
+}
+.p1{
+    grid-area: p1;
+}
+.p2{
+    grid-area: p2;
+}
+.p3{
+    grid-area: p3;
+}
+.p4{
+    grid-area: p4;
+}
+button{
+    width: 55%;
+    height: 10%;
+    color: white;
+    background-color: #1A2238;
+    text-decoration: none;
+    font-size: 200%;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition-duration: 600ms;
+    /* use this if your want*/ 
+    
+  
+
+
+
+}
+
+
+nav:hover button:hover{
+    color: #fff;
+    background: #FF6A3D;
+}
+button:active{
+    color: #1A2238;
+}
+nav p{
+    width: 80%;
+    font-size:180%;
+    height: 10%;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+   
+}
+nav:hover button{
+    color: #1A2238;
+    background-color: #fff;
+}
+.price{
+    font-size: 180%;
+    color: #FF6A3D;
+    margin-top: 9%;
+    margin-bottom: 1%;
+
+    
+}
+.policy{
+    margin-top: 5%;
+   
+    font-size: 110%;
+    text-decoration: underline;
+
+}
+.policy:hover{
+    color: #FF6A3D;
+    cursor: pointer;
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="roof">
+                <div class="fit">
+                        <a class="click">rent cars</a>
+                </div>
+            <div class="p1"><a style="color: #FF6A3D;" class="dif">home</a></div>
+            <div class="p2"><a href="seves.html" class="dif">services</a></div>
+            <div class="p3"><a class="dif" href="contact.html">contact</a></div>
+            <div class="p4"><a class="dif">our story</a></div>
+
+        </div>
+        <div class="parent">
+            <nav>
+           
+                <img src="cars/Mercedes-Maybash S 680 .jpg">
+                <p>MERCEDES-Maybach S 680 4matic</p>
+                <span class="price">2.299$/day</span>
+                <button>rent now</button>
+                <a class="policy">our policy and consumer protection</a>
+                
+            
+            </nav>
+        <nav>
+        
+                <img src="cars/bmw_xm_2023_4k_8k_2-1920x1080.jpg">
+                <p>BMW XM</p>
+                <span class="price">1.599$/day</span>
+                <button>rent now</button>
+                <a class="policy">our policy and consumer protection</a>
+            
+        </nav>
+        <nav>
+            
+                <img src="cars/Nissan GT-R50.jpg">
+                <p>Nissan GT-R50</p>
+                <span class="price">10.999$/day</span>
+                <button>rent now</button>
+                <a class="policy">our policy and consumer protection</a>
+
+        </nav>
+        <nav>
+           
+                <img src="cars/Audi.jpg">
+                <p>AUDI R8 Spyder</p>
+                <span class="price">2.099$/day</span>
+                <button>rent now</button>
+                <a class="policy">our policy and consumer protection</a>
+            
+        </nav>
+        <nav>
+            
+                <img src="cars/Ferrari-599-GTO-1920x1080.jpg">
+                <p>FERRARI 599 GTO</p>
+                <span class="price">10.999$/day</span>
+                <button>rent now</button>
+                <a class="policy">our policy and consumer protection</a>
+
+        
+        </nav>
+        <nav>
+            
+                <img src="cars/renault.jpg">
+                <p>Renault captur</p>
+               
+                <span class="price">449$/day</span>
+                <button>rent now</button>
+                <a class="policy">our policy and consumer protection</a>
+                
+             
+            
+        </nav>
+        <nav>
+            
+                <img src="cars/Porshe.webp">
+                <p>Porsche 911 Turbo S</p>
+                <span class="price">2.299$/day</span>
+                <button>rent now</button>
+                
+                <a class="policy">our policy and consumer protection</a>
+            
+
+
+        </nav>
+        <nav>
+            
+                <img src="cars/Honda NSX.jpeg">
+                <p>Honda NSX</p>
+                <span class="price">4.559$/day</span>
+                <button>rent now</button>
+                <a class="policy">our policy and consumer protection</a>
+        </nav>
+        <nav>
+            
+                <img src="cars/Toyota Turndra .jpg">
+                <p>Toyota Tundra Hybrid</p>
+                <span class="price">799$/day</span>
+                <button>rent now</button>
+                <a class="policy">our policy and consumer protection</a>
+        
+        </nav>
+        <nav>
+            
+            <img src="cars/Ford.jpg">
+            <p>Ford GT</p>
+            <span class="price">6.000$/day</span>
+            <button>rent now</button>
+            
+            <a class="policy">our policy and consumer protection</a>
+    
+    </nav>
+    <nav>
+            
+        <img src="cars/tesla model x.webp">
+        <p>tesla model x</p>
+        <span class="price">739$/day</span>
+        <button>rent now</button>
+        
+        <a class="policy">our policy and consumer protection</a>
+
+</nav>
+</nav>
+<nav>
+        
+    <img src="cars/BWD.jpg">
+    <p>BWD pangwang U9</p>
+    <span class="price">1.559$/day</span>
+    <button>rent now</button>
+    <a class="policy">our policy and consumer protection</a>
+
+</nav>
+</div>
+
+
+        
+        
+        <div class="bottom">
+        <a class="dif">contact</a>
+        <a class="dif">services</a>
+        <a class="dif">our story</a>
+        <a class="dif">home</a>
+
+    </div>   
+</body>
+</html>
+ 
+    
